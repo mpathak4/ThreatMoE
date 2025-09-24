@@ -1,0 +1,3 @@
+{"event_id":"sample-1","raw":"Suspicious login attempt from unknown IP"}
+{"event_id":"sample-2","raw":"Malicious attachment detected in email"}
+{"event_id":"sample-3","raw":"Unusual process spawn on host"}
