@@ -1,0 +1,7 @@
+# CODEOWNERS: map locations to required reviewers
+# Change mpathak4 to your org/team account as appropriate
+/src/       @mpathak4
+/models/    @mpathak4
+/.github/   @mpathak4
+/Dockerfile @mpathak4
+docs/       @mpathak4
