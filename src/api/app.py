@@ -8,7 +8,7 @@ app = FastAPI(title="ThreatMoE API", version="0.1")
 TELE_PATH = os.environ.get("CYBERMOE_TELE", "/app/data/cybermoe_telemetry.jsonl")
 
 class IngestEvent(BaseModel):
-    event_id: Optional[str]
+    event_id: Optional[str] = None
     raw: str
 
 @app.get("/health")
