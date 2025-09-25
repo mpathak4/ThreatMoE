@@ -1,0 +1,7 @@
+# codeql config file
+# Add rule disables or customizations here to suppress known false positives.
+# Example: to disable specific queries add entries under 'disable'
+# disable:
+#   - python/ql/src/Security/CWE-089/SomeQuery.ql
+#
+# For now, keep minimal; expand after reviewing CodeQL results.
