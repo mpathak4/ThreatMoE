@@ -1,13 +1,9 @@
-# ThreatMoE
+$(sed -n '1,200p' <<'TXT'
+# ThreatIntel Expert for CyberMoE / ThreatMoE
 
-ThreatMoE is a starter skeleton for an AI-driven real-time SOC threat-intelligence and anomaly detection platform.
+Purpose
+ThreatIntel Expert is a specialist module designed to ingest, normalize, enrich, correlate, and score Indicators of Compromise (IOCs), TTPs, and threat metadata from external feeds and reports. It integrates into the CyberMoE platform as a domain expert that can be sparsely invoked by ThreatMoE’s gating layer, and whose outputs are fused with other experts (Network, Endpoint, Malware, Identity, Cloud, Vulnerability, OT) for efficient, explainable detection and response.
 
-Quick demo:
-1. Put one JSON event per line in SampleTest.txt (see sample below).
-2. Run: `python3 ThreatMoe.py`
-3. Output: one JSON line per processed event with gating, expert logits, and predicted label.
-
-Project layout:
-- ThreatMoe.py    - demo entrypoint
-- SampleTest.txt  - sample events
-- Requirements.md  - dependencies and setup notes
+[See repository docs for full details: ARCHITECTURE.md, THREAT_MODEL.md, EXPERT_MODULES.md, DEV_GUIDE.md]
+TXT
+)

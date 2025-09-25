@@ -1,14 +1,9 @@
-# Requirements and Setup
+$(sed -n '1,200p' <<'TXT'
+Recommended environment
+- Python 3.10+ (3.12 tested)
+- GPU recommended for heavy model work
 
-Recommended:
-- Python 3.8+
-
-Install (example):
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-# Add project dependencies here when available, e.g.:
-# pip install transformers torch fastapi uvicorn
-
-Notes:
-- For heavy model work, use a GPU-enabled environment and proper dependency pins.
+Core packages
+- torch, transformers, fastapi, uvicorn, requests, aiohttp, stix2, taxii2-client, pymisp, pandas, scikit-learn
+TXT
+)
